@@ -1,5 +1,30 @@
 .todo-list {
   margin-bottom: 2rem;
+  max-height: 220px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.5rem;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+/* Custom scrollbar styling */
+.todo-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background: #5a7a8a;
+  border-radius: 4px;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+  background: #4a90a4;
 }
 
 .empty-state {

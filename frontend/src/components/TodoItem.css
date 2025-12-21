@@ -9,6 +9,8 @@
   animation: slideIn 0.3s ease-out;
   position: relative;
   gap: 1rem;
+  min-height: 80px;
+  scroll-snap-align: start;
 }
 
 @keyframes slideIn {

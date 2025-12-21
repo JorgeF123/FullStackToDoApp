@@ -7,7 +7,7 @@ A modern, full-stack todo application featuring a beautiful clipboard-style UI. 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## ✨ Features
+## Features
 
 - ✅ **CRUD Operations** - Create, read, update, and delete todos
 - ✅ **Task Completion** - Mark tasks as complete or incomplete
@@ -16,7 +16,7 @@ A modern, full-stack todo application featuring a beautiful clipboard-style UI. 
 - ✅ **RESTful API** - Clean backend architecture
 - ✅ **Real-time Updates** - Instant feedback on all operations
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 19** - Modern UI library
@@ -30,7 +30,7 @@ A modern, full-stack todo application featuring a beautiful clipboard-style UI. 
 - **Lombok** - Reduces boilerplate code
 - **Maven** - Dependency management
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -39,7 +39,7 @@ Before you begin, ensure you have the following installed:
 - **PostgreSQL 18+** - [Download PostgreSQL](https://www.postgresql.org/download/)
 - **Git** - [Download Git](https://git-scm.com/downloads)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
@@ -158,7 +158,7 @@ ToDoFullStackApp/
 └── README.md
 ```
 
-## 🎨 UI Features
+## UI Features
 
 - **Clipboard Design** - Unique clipboard-themed interface
 - **Smooth Animations** - Polished user interactions
@@ -166,13 +166,13 @@ ToDoFullStackApp/
 - **Color Themes** - Modern blue/teal color scheme
 - **Responsive Layout** - Adapts to all screen sizes
 
-## 🔒 Security
+## Security
 
 - Database credentials are stored in `application.properties` which is **excluded from Git**
 - Use `application.properties.example` as a template
 - Never commit sensitive information
 
-## 🧪 Testing
+## Testing
 
 ### Backend Tests
 ```bash
@@ -186,7 +186,7 @@ cd frontend
 npm test
 ```
 
-## 📝 Development
+## Development
 
 ### Backend Development
 - Hot reload is enabled with Spring Boot DevTools
@@ -198,7 +198,7 @@ npm test
 - Fast refresh for React components
 - ESLint for code quality
 
-## 🚢 Deployment
+## Deployment
 
 ### Backend Deployment
 1. Build the JAR file:
@@ -221,7 +221,7 @@ npm run build
 
 2. The `dist/` folder contains the production-ready files
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -231,22 +231,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👤 Author
+## Author
 
 **Jorge Flores**
-
-- GitHub: [@JorgeF123](https://github.com/JorgeF123)
-- Repository: [FullStackToDoApp](https://github.com/JorgeF123/FullStackToDoApp)
-
-## 🙏 Acknowledgments
-
-- Spring Boot team for the amazing framework
-- React team for the powerful UI library
-- All open-source contributors
 
 ---
 

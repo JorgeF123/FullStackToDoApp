@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Pencil body -->
+  <path d="M6 26 L26 6 L28 8 L8 28 Z" fill="#ff6b6b" stroke="#333" stroke-width="1.5"/>
+  <!-- Pencil tip -->
+  <path d="M26 6 L30 2 L30 6 L26 6 Z" fill="#ffd93d" stroke="#333" stroke-width="1.5"/>
+  <!-- Pencil eraser -->
+  <path d="M6 26 L2 30 L6 30 L6 26 Z" fill="#ff9ff3" stroke="#333" stroke-width="1.5"/>
+  <!-- Pencil band -->
+  <path d="M6 26 L8 28 L8 30 L6 30 Z" fill="#333"/>
+  <!-- Highlight -->
+  <path d="M7 7 L25 25" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+</svg>
+

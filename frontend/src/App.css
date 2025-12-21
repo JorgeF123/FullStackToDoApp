@@ -1,0 +1,127 @@
+.app {
+  min-height: 100vh;
+  background: #a8d8ea;
+  padding: 3rem 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 550px;
+  height: calc(100% + 40px);
+  background: #fefefe;
+  border: 8px solid #5a7a8a;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 0 0 2px #6b8a9a;
+  z-index: -1;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 28px;
+  background: linear-gradient(to bottom, #7a9aab 0%, #5a7a8a 100%);
+  border: 8px solid #5a7a8a;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  z-index: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.app-header {
+  text-align: center;
+  color: #2c5f6b;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
+  position: relative;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+  color: #2c5f6b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #4a90a4;
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.error-message {
+  background-color: #fff;
+  color: #c53030;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 0 2rem 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #c53030;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dismiss-button {
+  background: none;
+  border: none;
+  color: #c53030;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.dismiss-button:hover {
+  background-color: rgba(197, 48, 48, 0.1);
+}
+
+.loading {
+  text-align: center;
+  color: #2c5f6b;
+  font-size: 1.1rem;
+  padding: 2rem;
+  font-weight: 500;
+}
+
+.todo-stats {
+  text-align: center;
+  color: #2c5f6b;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

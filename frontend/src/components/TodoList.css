@@ -1,0 +1,18 @@
+.todo-list {
+  margin-bottom: 2rem;
+}
+
+.empty-state {
+  background: transparent;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #4a90a4;
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+}
+

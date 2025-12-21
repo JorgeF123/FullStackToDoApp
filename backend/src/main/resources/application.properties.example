@@ -1,0 +1,21 @@
+# Application Name
+spring.application.name=backend
+
+# Server Port
+server.port=8080
+
+# PostgreSQL Database
+spring.datasource.url=jdbc:postgresql://localhost:5432/tododb
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA/Hibernate Settings
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+# CORS Configuration
+spring.web.cors.allowed-origins=http://localhost:5173
+

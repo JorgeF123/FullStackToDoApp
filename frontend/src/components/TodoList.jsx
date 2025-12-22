@@ -1,11 +1,11 @@
 import TodoItem from './TodoItem';
 import './TodoList.css';
 
-function TodoList({ todos, onToggleComplete, onDelete }) {
+function TodoList({ todos, onToggleComplete, onDelete, onUpdate }) {
   if (todos.length === 0) {
     return (
       <div className="empty-state">
-        <p>No todos yet. Add one above to get started!</p>
+        <p>No to dos yet. Add one above to get started!</p>
       </div>
     );
   }
@@ -18,6 +18,7 @@ function TodoList({ todos, onToggleComplete, onDelete }) {
           todo={todo}
           onToggleComplete={onToggleComplete}
           onDelete={onDelete}
+          onUpdate={onUpdate}
         />
       ))}
     </div>

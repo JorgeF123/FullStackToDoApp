@@ -40,7 +40,7 @@ function TodoForm({ onAddTodo }) {
         />
       </div>
       <button type="submit" className="add-button">
-        Add Todo
+        Add To Do
       </button>
     </form>
   );

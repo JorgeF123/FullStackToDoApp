@@ -21,7 +21,7 @@ function App() {
       const data = await todoService.getAllTodos();
       setTodos(data);
     } catch (err) {
-      setError('Failed to load todos. Make sure the backend is running.');
+      setError('Failed to load to dos. Make sure the backend is running.');
       console.error('Error fetching todos:', err);
     } finally {
       setLoading(false);
@@ -58,11 +58,21 @@ function App() {
     }
   };
 
+  const handleUpdate = async (id, updatedTodo) => {
+    try {
+      const todo = await todoService.updateTodo(id, updatedTodo);
+      setTodos(todos.map((t) => (t.id === id ? todo : t)));
+    } catch (err) {
+      setError('Failed to update todo');
+      console.error('Error updating todo:', err);
+    }
+  };
+
   return (
     <div className="app">
       <div className="container">
         <header className="app-header">
-          <h1>My Todo List</h1>
+          <h1>My To Do List</h1>
           <p className="subtitle">Stay organized and get things done</p>
         </header>
 
@@ -78,12 +88,13 @@ function App() {
         <TodoForm onAddTodo={handleAddTodo} />
 
         {loading ? (
-          <div className="loading">Loading todos...</div>
+          <div className="loading">Loading to dos...</div>
         ) : (
           <TodoList
             todos={todos}
             onToggleComplete={handleToggleComplete}
             onDelete={handleDelete}
+            onUpdate={handleUpdate}
           />
         )}
 

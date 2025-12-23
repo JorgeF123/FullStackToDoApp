@@ -24,11 +24,13 @@
   width: 100%;
   max-width: 550px;
   height: calc(100% + 40px);
+  max-height: 650px; /* Prevent clipboard from stretching beyond 3 todos */
   background: #fefefe;
   border: 8px solid #5a7a8a;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 0 0 2px #6b8a9a;
   z-index: -1;
+  overflow: hidden;
 }
 
 .container::after {

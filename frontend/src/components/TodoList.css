@@ -1,5 +1,10 @@
 .todo-list {
   margin-bottom: 2rem;
+  height: 190px; /* Fixed height - exactly 2 items visible, no 3rd item showing */
+  max-height: 190px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .empty-state {
@@ -14,6 +19,25 @@
   font-size: 1rem;
   font-weight: 500;
   font-style: italic;
+}
+
+/* Scrollbar Styling */
+.todo-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background: #7bc4d4;
+  border-radius: 4px;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+  background: #5aa8b8;
 }
 
 /* Dark Mode Styles */

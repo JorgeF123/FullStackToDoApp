@@ -8,11 +8,22 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [darkMode, setDarkMode] = useState(() => {
+    // Load from localStorage or default to false
+    const saved = localStorage.getItem('darkMode');
+    return saved ? JSON.parse(saved) : false;
+  });
 
   // Fetch all todos on component mount
   useEffect(() => {
     fetchTodos();
   }, []);
+
+  // Save dark mode preference to localStorage
+  useEffect(() => {
+    localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+  }, [darkMode]);
 
   const fetchTodos = async () => {
     try {
@@ -68,12 +79,28 @@ function App() {
     }
   };
 
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="app">
+    <div className={`app ${darkMode ? 'dark-mode' : ''}`}>
       <div className="container">
         <header className="app-header">
-          <h1>My To Do List</h1>
-          <p className="subtitle">Stay organized and get things done</p>
+          <div className="header-content">
+            <div>
+              <h1>My To Do List</h1>
+              <p className="subtitle">Stay organized and get things done</p>
+            </div>
+            <button 
+              onClick={toggleDarkMode} 
+              className="theme-toggle"
+              aria-label="Toggle dark mode"
+              title={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {darkMode ? '☀️' : '🌙'}
+            </button>
+          </div>
         </header>
 
         {error && (

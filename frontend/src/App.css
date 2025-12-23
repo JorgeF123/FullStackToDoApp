@@ -125,3 +125,88 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+/* Dark Mode Styles */
+.app.dark-mode {
+  background: #1a1a2e;
+}
+
+.app.dark-mode .container::before {
+  background: #2d2d44;
+  border-color: #4a5568;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 0 0 2px #3a3a52;
+}
+
+.app.dark-mode .container::after {
+  background: linear-gradient(to bottom, #4a5568 0%, #3a3a52 100%);
+  border-color: #4a5568;
+}
+
+.app.dark-mode .app-header h1 {
+  color: #e2e8f0;
+}
+
+.app.dark-mode .subtitle {
+  color: #a0aec0;
+}
+
+.app.dark-mode .loading {
+  color: #e2e8f0;
+}
+
+.app.dark-mode .todo-stats {
+  color: #e2e8f0;
+}
+
+.app.dark-mode .error-message {
+  background-color: #2d1b1b;
+  color: #fc8181;
+  border-color: #fc8181;
+}
+
+.app.dark-mode .dismiss-button {
+  color: #fc8181;
+}
+
+.app.dark-mode .dismiss-button:hover {
+  background-color: rgba(252, 129, 129, 0.2);
+}
+
+/* Theme Toggle Button */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.theme-toggle {
+  background: #7bc4d4;
+  border: 2px solid #4a90a4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  background: #5aa8b8;
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.app.dark-mode .theme-toggle {
+  background: #4a5568;
+  border-color: #718096;
+}
+
+.app.dark-mode .theme-toggle:hover {
+  background: #5a6578;
+}

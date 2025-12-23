@@ -16,3 +16,20 @@
   font-style: italic;
 }
 
+/* Dark Mode Styles */
+.app.dark-mode .empty-state {
+  color: #a0aec0;
+}
+
+.app.dark-mode .todo-list::-webkit-scrollbar-track {
+  background: #2d2d44;
+}
+
+.app.dark-mode .todo-list::-webkit-scrollbar-thumb {
+  background: #4a5568;
+}
+
+.app.dark-mode .todo-list::-webkit-scrollbar-thumb:hover {
+  background: #5a6578;
+}
+
